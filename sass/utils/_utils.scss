@@ -1,0 +1,47 @@
+.list-no-style {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+}
+
+.current-page-color {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $color-hover;
+}
+
+.color-web {
+  color: $color-hover;
+}
+
+.color-studio-white {
+  color: $color-light;
+}
+
+.second-font-family {
+  font-family: $second-font-family;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: $color-dark;
+}

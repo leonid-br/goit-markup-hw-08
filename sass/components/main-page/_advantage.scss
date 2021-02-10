@@ -1,0 +1,49 @@
+.advantage {
+  padding: 94px 0;
+}
+
+.advantage__list {
+  display: flex;
+}
+
+.advantage__card {
+  width: 270px;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.advantage__third-title {
+  margin-bottom: 10px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $color-h;
+}
+
+.advantage__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.advantage__icon {
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+  background-color: $team-card-color;
+  display: inline-flex;
+
+  & svg {
+    width: 70px;
+    height: 70px;
+
+    margin: auto;
+  }
+}

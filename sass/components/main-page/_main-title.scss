@@ -1,0 +1,51 @@
+.main-title {
+  padding: 200px 0 280px;
+
+  background-color: $color-background;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/main/bg-main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-title__first-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $color-light;
+}
+
+.main-title__main-text {
+  margin: 0 auto;
+
+  width: 696px;
+  height: 120px;
+}
+
+.modal__open-btn {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px 32px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+
+  color: $color-light;
+  background-color: $color-hover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}

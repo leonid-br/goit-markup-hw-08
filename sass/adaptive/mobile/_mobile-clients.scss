@@ -1,0 +1,50 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .clients {
+    padding: 60px 0;
+  }
+
+  .clients__title {
+    margin-bottom: 30px;
+
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .clients__item:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+
+  .clients__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90px;
+    width: 210px;
+
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    fill: $icon-color;
+
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+      fill: $color-hover;
+      border-color: $color-hover;
+    }
+  }
+}

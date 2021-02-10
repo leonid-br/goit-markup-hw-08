@@ -1,0 +1,145 @@
+.footer {
+  padding: 60px 0;
+  background-color: $color-background;
+}
+
+.footer__address {
+  margin-top: 20px;
+  margin-bottom: 9px;
+
+  & a {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $color-light;
+  }
+}
+
+.footer__contacts-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__contacts-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-hover;
+  }
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__center {
+  margin-left: 70px;
+}
+
+.footer__center-list {
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.footer__center-item + .footer__center-item {
+  margin-left: 10px;
+}
+
+.footer__center p,
+.footer__right p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $color-light;
+}
+
+.footer__icon-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: $icon-color-footer;
+  fill: $color-light;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-hover;
+  }
+}
+
+.footer__right {
+  margin-left: auto;
+  width: 570px;
+
+  & p {
+    margin-bottom: 20px;
+  }
+
+  & input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px;
+    width: 358px;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: $color-light;
+  }
+}
+
+.footer__form-mailing {
+  display: flex;
+}
+
+.footer__btn-sent {
+  display: flex;
+  align-items: center;
+
+  margin-left: 12px;
+
+  background: $color-hover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 28px;
+  border: none;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $color-light;
+
+  & svg {
+    margin-left: 10px;
+  }
+}

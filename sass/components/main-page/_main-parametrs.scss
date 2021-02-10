@@ -1,0 +1,56 @@
+body {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  color: $color-h;
+}
+
+p {
+  color: $color-p;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* a:focus,
+button:focus {
+   outline: none;
+} */
+
+h1,
+h2,
+h3,
+ul,
+p {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}

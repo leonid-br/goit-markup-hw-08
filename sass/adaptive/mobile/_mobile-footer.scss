@@ -1,0 +1,125 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    background-color: $color-background;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .footer__left-side {
+    margin-bottom: 60px;
+  }
+  .footer__address {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .footer__address a {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $color-light;
+  }
+
+  .footer__contacts-link {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .footer__contacts-list:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .footer__center-list {
+    display: flex;
+
+    margin-top: 20px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__center p,
+  .footer__right p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $color-light;
+  }
+
+  .footer__icon-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    background-color: $icon-color-footer;
+    fill: $color-light;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color-hover;
+    }
+  }
+
+  .footer__right input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    border-radius: 4px;
+    padding: 15px;
+    width: 100%;
+    margin: 20px 0;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: $color-light;
+  }
+
+  .footer__btn-sent {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background: $color-hover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 28px;
+    border: none;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $color-light;
+
+    & svg {
+      margin-left: 10px;
+    }
+  }
+}
