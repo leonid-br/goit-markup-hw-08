@@ -19,47 +19,95 @@
     <!-- ШАПКА САЙТА -->
     <header class="header">
       <div class="container">
-        <nav class="header__menu">
+        <div class="header__logo-box">
           <a href="./index.html" class="second-font-family header__logo"
             ><span class="color-web">Web</span>Studio
           </a>
-          <button class="header__mobile-menu">
-            <svg width="24px" height="16px">
-              <use href="./img/sprite.svg#icon-menu-icon"></use>
+          <button
+            class="header__mobile-menu-btn-open"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-open
+          >
+            <svg
+              width="24"
+              height="16"
+              aria-label="Переключатель мобильного меню"
+            >
+              <!--  <use
+                class="icon-cross"
+                href="./img/sprite.svg#icon-menu-cross"
+              ></use> -->
+              <use
+                class="icon-menu"
+                href="./img/sprite.svg#icon-menu-icon"
+              ></use>
             </svg>
           </button>
-          <ul class="header__nav list-no-style">
+        </div>
+        <div class="header__mobile-menu" data-menu>
+          <button
+            class="header__mobile-menu-btn-close"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-close
+          >
+            <svg
+              width="24"
+              height="16"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./img/sprite.svg#icon-menu-cross"
+              ></use>
+            </svg>
+          </button>
+          <nav class="header__menu">
+            <ul class="header__nav list-no-style">
+              <li class="header__list">
+                <a href="#" class="current-page-color">Студия</a>
+              </li>
+              <li class="header__list">
+                <a href="./pages/portfolio.html" class="header__nav-color"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header__list">
+                <a href="#" class="header__nav-color">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="list-no-style header__address">
             <li class="header__list">
-              <a href="#" class="current-page-color">Студия</a>
+              <a
+                href="mailto:info@devstudio.com"
+                class="header__address-link mail"
+              >
+                <svg class="icon-mail">
+                  <use href="./img/sprite.svg#icon-mail" width="16px"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
             <li class="header__list">
-              <a href="./pages/portfolio.html" class="header__nav-color"
-                >Портфолио</a
+              <a href="tel:+380961111111" class="header__address-link phone">
+                <svg class="icon-phone">
+                  <use href="./img/sprite.svg#icon-phone" width="10px"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
-            <li class="header__list">
-              <a href="#" class="header__nav-color">Контакты</a>
-            </li>
           </ul>
-        </nav>
-        <ul class="list-no-style header__address">
-          <li class="header__list">
-            <a href="mailto:info@devstudio.com" class="header__address-link">
-              <svg>
-                <use href="./img/sprite.svg#icon-mail" width="16px"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header__list">
-            <a href="tel:+380961111111" class="header__address-link">
-              <svg class="phone">
-                <use href="./img/sprite.svg#icon-phone" width="10px"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="list-no-style header__socials">
+            <li class="slash"><a href="#">Instagram</a></li>
+            <li class="slash"><a href="#">Twitter</a></li>
+            <li class="slash"><a href="#">Facebook</a></li>
+            <li class="slash"><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- /ШАПКА САЙТА -->
@@ -70,11 +118,11 @@
           <h1 class="main-title__first-title">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button data-open-modal class="modal__open-btn" type="button">
+          <button data-modal-open class="modal__open-btn" type="button">
             Заказать услугу
           </button>
 
-          <div class="backdrop is-hidden" data-backdrop>
+          <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <form class="modal__form">
                 <p>Оставьте свои данные, мы вам перезвоним</p>
@@ -138,7 +186,7 @@
 
                 <button type="submit" class="modal__btn-sent">Отправить</button>
               </form>
-              <button data-close-modal class="modal__btn-close">
+              <button data-modal-close class="modal__btn-close">
                 <svg width="30" height="30">
                   <use href="./img/sprite.svg#icon-close"></use>
                 </svg>
@@ -565,7 +613,7 @@
         </div>
       </div>
     </footer>
-    <script>
+    <!-- <script>
       const refs = {
         openModalBtn: document.querySelector('[data-open-modal]'),
         closeModalBtn: document.querySelector('[data-close-modal]'),
@@ -584,6 +632,8 @@
       function logBackdropClick() {
         console.log('Это клик в бекдроп');
       }
-    </script>
+    </script> -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
