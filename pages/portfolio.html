@@ -11,11 +11,107 @@
     />
     <!--  <link rel="stylesheet" href="../css/modern-normalize.css" /> -->
     <!--     <link rel="stylesheet" href="../css/style.css" /> -->
-    <link rel="stylesheet" href="../css/portfolio.min.css" />
+    <link rel="stylesheet" href="/css/adaptiv.min.css" />
   </head>
   <body>
     <!-- ШАПКА САЙТА -->
     <header class="header">
+      <div class="container">
+        <div class="header__logo-box">
+          <a href="../index.html" class="second-font-family header__logo"
+            ><span class="color-web">Web</span>Studio
+          </a>
+          <button
+            class="header__mobile-menu-btn-open"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-open
+          >
+            <svg
+              width="24"
+              height="16"
+              aria-label="Переключатель мобильного меню"
+            >
+              <!--  <use
+                class="icon-cross"
+                href="./img/sprite.svg#icon-menu-cross"
+              ></use> -->
+              <use
+                class="icon-menu"
+                href="../img/sprite.svg#icon-menu-icon"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__mobile-menu" data-menu>
+          <div class="header__btn-box">
+            <button
+              class="header__mobile-menu-btn-close"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-close
+            >
+              <svg
+                width="24"
+                height="16"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="icon-cross"
+                  href="../img/sprite.svg#icon-menu-cross"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__nav list-no-style">
+              <li class="header__list">
+                <a href="../index.html" class="header__nav-color">Студия</a>
+              </li>
+              <li class="header__list">
+                <a href="../pages/portfolio.html" class="current-page-color"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header__list">
+                <a href="#" class="header__nav-color">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="list-no-style header__address">
+            <li class="header__list">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header__address-link mail"
+              >
+                <svg class="icon-mail">
+                  <use href="./img/sprite.svg#icon-mail" width="16px"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header__list">
+              <a href="tel:+380961111111" class="header__address-link phone">
+                <svg class="icon-phone">
+                  <use href="./img/sprite.svg#icon-phone" width="10px"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="list-no-style header__socials">
+            <li class="slash"><a href="#">Instagram</a></li>
+            <li class="slash"><a href="#">Twitter</a></li>
+            <li class="slash"><a href="#">Facebook</a></li>
+            <li class="slash"><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!--     <header class="header">
       <div class="container">
         <nav class="header__menu">
           <a href="../index.html" class="second-font-family header__logo"
@@ -55,6 +151,7 @@
         </ul>
       </div>
     </header>
+ -->
     <!-- /ШАПКА САЙТА -->
     <main>
       <!-- ПОРТФОЛИО -->
@@ -387,5 +484,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/modal.js"></script>
   </body>
 </html>
