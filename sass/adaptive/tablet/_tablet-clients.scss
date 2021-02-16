@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) {
   .clients {
     padding: 96px 0;
   }
@@ -8,18 +8,21 @@
   }
 
   .clients__item {
-    width: 170px;
+    width: 226px;
     height: 90px;
+    margin: 0 15px;
+
+    &:nth-child(1) {
+      margin-bottom: 10px;
+    }
   }
 
   .clients__list {
+    margin: 0 -15px;
     margin-top: 50px;
 
     display: flex;
-  }
-
-  .clients__item + .clients__item {
-    margin-left: 30px;
+    flex-wrap: wrap;
   }
 
   .clients__logo {

@@ -1,17 +1,21 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1190px) {
   .advantage {
-    padding: 94px 0;
+    padding: 60px 0;
   }
 
   .advantage__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .advantage__card {
-    width: 270px;
+    width: 354px;
 
-    &:not(:first-child) {
+    &:nth-child(even) {
       margin-left: 30px;
+    }
+    &:nth-child(1) {
+      margin-bottom: 30px;
     }
   }
 
@@ -34,7 +38,7 @@
   }
 
   .advantage__icon {
-    width: 270px;
+    width: 354px;
     height: 120px;
 
     margin-bottom: 30px;
@@ -47,5 +51,8 @@
 
       margin: auto;
     }
+  }
+  .activity {
+    display: none;
   }
 }

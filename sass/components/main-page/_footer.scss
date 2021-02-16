@@ -1,3 +1,5 @@
+@media screen and (min-width: 1200px) {
+
 .footer {
   padding: 60px 0;
   background-color: $color-background;
@@ -142,4 +144,5 @@
   & svg {
     margin-left: 10px;
   }
+}
 }
