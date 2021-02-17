@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <ul>
+        <li class="item">
+          <img
+            srcset="
+              ./img/adaptive-img/desck/mine/olga-r_270.jpg     270w,
+              ./img/adaptive-img/tablet/mine/olga-r-354.jpg    354w,
+              ./img/adaptive-img/mobile/mine/olga-r-450.jpg    450w,
+              ./img/adaptive-img/desck/mine/olga-r_540@2x.jpg  540w,
+              ./img/adaptive-img/tablet/mine/olga-r_708@2x.jpg 708w,
+              ./img/adaptive-img/mobile/mine/olga-r_900@2x.jpg 900w
+            "
+            src="./img/adaptive-img/desck/mine/olga-r_270.jpg"
+            sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
+            alt="Ольга Репина"
+          />
+        </li>
+        <li class="item"><img src="" alt="" /></li>
+        <li class="item"><img src="" alt="" /></li>
+        <li class="item"><img src="" alt="" /></li>
+      </ul>
+    </div>
+  </body>
+</html>
