@@ -1,9 +1,11 @@
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .main-title {
-    background-color: pink;
-  }
+@media screen and (max-width: 767px) {
+  /*   .main-title {
+      background: pink;
+  } */
+
   .main-title__main-text {
     padding: 118px 60px;
+    background-color: red;
   }
 
   .main-title__first-title {

@@ -1,7 +1,7 @@
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .footer {
+@media screen and (max-width: 767px) {
+  .footer .container {
     background-color: $color-background;
-    padding: 60px 0;
+    padding: 60px 15px;
     text-align: center;
   }
 
