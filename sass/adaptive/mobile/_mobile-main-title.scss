@@ -1,11 +1,31 @@
 @media screen and (max-width: 767px) {
-  /*   .main-title {
-      background: pink;
-  } */
+  .main-title {
+    background-color: $color-background;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../../img/adaptive-img/mobile/main/bg-mine_480.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .main-title {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../../../img/adaptive-img/mobile/main/bg-mine_960@2x.jpg');
+    }
+  }
 
   .main-title__main-text {
     padding: 118px 60px;
-    background-color: red;
   }
 
   .main-title__first-title {
@@ -19,8 +39,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: black;
-    /* color: $color-light */
+    color: $color-light;
   }
 
   .modal__open-btn {

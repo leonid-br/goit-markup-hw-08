@@ -500,11 +500,36 @@ button {
   .main-title {
     padding: 200px 0 280px;
     background-color: #2f303a;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/main/bg-main.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main/bg-main.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../img/adaptive-img/desck/main/bg-main_1600.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../img/adaptive-img/desck/main/bg-main_1600.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-title {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../img/adaptive-img/desck/main/bg-main_3200@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../img/adaptive-img/desck/main/bg-main_3200@2x.jpg");
+  }
+  /* .box{
+  width: 480px;
+  height: 320px;
+  background-image: url('photo.png');
+  background-size: 480px 320px;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .box {
+    background-image: url('photo@2x.png');
+  } */
+}
+
+@media screen and (min-width: 1200px) {
   .main-title__first-title {
     font-weight: 900;
     font-size: 44px;
@@ -1385,8 +1410,9 @@ button {
     display: -ms-flexbox;
     display: flex;
   }
-  .header .container {
+  .header {
     border: 1px solid #ececec;
+    width: 100%;
   }
   .header__logo {
     font-size: 24px;
@@ -1412,12 +1438,26 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  /*   .main-title {
-      background: pink;
-  } */
+  .main-title {
+    background-color: #2f303a;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../img/adaptive-img/mobile/main/bg-mine_480.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../img/adaptive-img/mobile/main/bg-mine_480.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .main-title {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../img/adaptive-img/mobile/main/bg-mine_960@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../img/adaptive-img/mobile/main/bg-mine_960@2x.jpg");
+  }
+}
+
+@media screen and (max-width: 767px) {
   .main-title__main-text {
     padding: 118px 60px;
-    background-color: red;
   }
   .main-title__first-title {
     width: 360px;
@@ -1428,8 +1468,7 @@ button {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: black;
-    /* color: $color-light */
+    color: #ffffff;
   }
   .modal__open-btn {
     display: -webkit-box;
@@ -2012,8 +2051,8 @@ button {
     pointer-events: none;
     top: 0;
     left: 0;
-    background-color: pink;
-    /* background-color: $color-light; */
+    /* background-color: pink; */
+    background-color: #ffffff;
     width: 100%;
     /*     min-height: 100vh;
  */
@@ -2032,10 +2071,10 @@ button {
   }
   .header__mobile-menu-btn-close {
     position: absolute;
-    top: 0;
-    /* right: 0; */
-    margin-top: 21px;
-    margin-left: 205px;
+    top: 18px;
+    right: -207px;
+    /*   margin-top: 21px;
+    margin-left: 205px; */
     background: none;
     border: none;
     /* margin-left: auto; */
@@ -2107,7 +2146,7 @@ button {
     display: -ms-flexbox;
     display: flex;
     padding-left: 40px;
-    width: 480px;
+    /*    width: 480px; */
     margin-left: auto;
     margin-right: auto;
   }
@@ -2394,11 +2433,21 @@ button {
   .main-title {
     padding: 118px 0 198px;
     background-color: #2f303a;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/main/bg-main.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/main/bg-main.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../img/adaptive-img/tablet/main/bg-main_768.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../img/adaptive-img/tablet/main/bg-main_768.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1190px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1190px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1190px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1190px) and (min-resolution: 2dppx) {
+  .main-title {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../img/adaptive-img/tablet/main/bg-main_1536@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../img/adaptive-img/tablet/main/bg-main_1536@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1190px) {
   .main-title__first-title {
     font-weight: 900;
     font-size: 26px;

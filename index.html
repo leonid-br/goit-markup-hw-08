@@ -260,12 +260,24 @@
           <ul class="list-no-style activity__list">
             <li class="activity__item">
               <div class="activity__thumb">
-                <img
+                <picture>
+                  <img
+                    srcset="
+                      ./img/adaptive-img/desck/main/keybord_370.jpg    1x,
+                      ./img/adaptive-img/desck/main/keybord_740@2x.jpg 2x
+                    "
+                    src="./img/adaptive-img/desck/main/keybord_370.jpg"
+                    alt="клавиатура"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <!--   <img
                   src="./img/main/keybord.jpg"
                   alt="клавиатура"
                   width="370"
                   height="294"
-                />
+                /> -->
                 <div class="activity__lable">
                   <p class="activity__lable-text">Десктопные приложения</p>
                 </div>
@@ -273,12 +285,23 @@
             </li>
             <li class="activity__item">
               <div class="activity__thumb">
-                <img
+                <!--  <img
                   src="./img/main/phone.jpg"
                   alt="телефон"
                   width="370"
                   height="294"
-                />
+                /> -->
+                <picture>
+                  <img
+                    srcset="
+                      ./img/adaptive-img/desck/main/phone_370.jpg    1x,
+                      ./img/adaptive-img/desck/main/phone_740@2x.jpg 2x
+                    "
+                    src="./img/adaptive-img/desck/main/phone_370.jpg"
+                    alt="телефон"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="activity__lable">
                   <p class="activity__lable-text">Мобильные приложения</p>
                 </div>
@@ -286,12 +309,23 @@
             </li>
             <li class="activity__item">
               <div class="activity__thumb">
-                <img
+                <!--  <img
                   src="./img/main/tablet.jpg"
                   alt="планшет"
                   width="370"
                   height="294"
-                />
+                /> -->
+                <picture>
+                  <img
+                    srcset="
+                      ./img/adaptive-img/desck/main/tablet_370.jpg    1x,
+                      ./img/adaptive-img/desck/main/tablet_740@2x.jpg 2x
+                    "
+                    src="./img/adaptive-img/desck/main/tablet_370.jpg"
+                    alt="планшет"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="activity__lable">
                   <p class="activity__lable-text">Дизайнерские решения</p>
                 </div>
@@ -307,41 +341,33 @@
           <h2 class="team__second-title">Наша команда</h2>
           <ul class="list-no-style team__list">
             <li class="team__card">
-              <!--   <img
-                srcset="
-                  ./img/adaptive-img/desck/main/igor-d_270.jpg     270w,
-                  ./img/adaptive-img/tablet/main/igor-d-354.jpg    354w,
-                  ./img/adaptive-img/mobile/main/igor-d-450.jpg    450w,
-                  ./img/adaptive-img/desck/main/igor-d_540@2x.jpg  540w,
-                  ./img/adaptive-img/tablet/main/igor-d_708@2x.jpg 708w,
-                  ./img/adaptive-img/mobile/main/igor-d_900@2x.jpg 900w
-                "
-                src="./img/adaptive-img/desck/main/igor-d_270.jpg"
-                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
-                alt="Игорь Демьяненко"
-              /> -->
               <picture>
                 <source
-                  media="(max-width: 468px)"
-                  srcset=" ./img/adaptive-img/mobile/main/igor-d-450.jpg 1x
-                ./img/adaptive-img/mobile/main/igor-d_900@2x.jpg 2x " />
-                <source
-                  srcset="
-                    ./img/adaptive-img/tablet/main/igor-d-354.jpg    1x,
-                    ./img/adaptive-img/tablet/main/igor-d_708@2x.jpg 2x
-                  "
-                  media="(min-width: 768px )" />
-                <source
+                  media="(min-width:1200px)"
                   srcset="
                     ./img/adaptive-img/desck/main/igor-d_270.jpg    1x,
                     ./img/adaptive-img/desck/main/igor-d_540@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)" />
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/adaptive-img/tablet/main/igor-d-354.jpg    1x,
+                    ./img/adaptive-img/tablet/main/igor-d_708@2x.jpg 2x
+                  "
+                />
 
                 <img
-                  src="./img/adaptive-img/desck/main/igor-d_270.jpg"
+                  srcset="
+                    ./img/adaptive-img/mobile/main/igor-d-450.jpg    1x,
+                    ./img/adaptive-img/mobile/main/igor-d_900@2x.jpg 2x
+                  "
+                  src="./img/adaptive-img/mobile/main/igor-d-450.jpg"
                   alt="Игорь Демьяненко"
-              /></picture>
+                  loading="lazy"
+                />
+              </picture>
               <!--  <img
                 src="./img/main/igor-d.jpg"
                 alt="Игорь Демьяненко"
@@ -388,20 +414,34 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                srcset="
-                  ./img/adaptive-img/desck/main/olga-r_270.jpg     270w,
-                  ./img/adaptive-img/tablet/main/olga-r-354.jpg    354w,
-                  ./img/adaptive-img/mobile/main/olga-r-450.jpg    450w,
-                  ./img/adaptive-img/desck/main/olga-r_540@2x.jpg  540w,
-                  ./img/adaptive-img/tablet/main/olga-r_708@2x.jpg 708w,
-                  ./img/adaptive-img/mobile/main/olga-r_900@2x.jpg 900w
-                "
-                src="./img/adaptive-img/desck/main/olga-r_270.jpg"
-                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
-                alt="Ольга Репина"
-              />
-              <!--  <img
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/adaptive-img/desck/main/olga-r_270.jpg    1x,
+                    ./img/adaptive-img/desck/main/olga-r_540@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/adaptive-img/tablet/main/olga-r-354.jpg    1x,
+                    ./img/adaptive-img/tablet/main/olga-r_708@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  srcset="
+                    ./img/adaptive-img/mobile/main/olga-r-450.jpg    1x,
+                    ./img/adaptive-img/mobile/main/olga-r_900@2x.jpg 2x
+                  "
+                  src="./img/adaptive-img/mobile/main/olga-r-450.jpg"
+                  alt="Ольга Репина"
+                  loading="lazy"
+                />
+              </picture>
+              <!-- <img
                 src="./img/main/olga-r.jpg"
                 alt="Ольга Репина"
                 width="270"
@@ -443,20 +483,35 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                srcset="
-                  ./img/adaptive-img/desck/main/nikolay-t_270.jpg     270w,
-                  ./img/adaptive-img/tablet/main/nikolay-t-354.jpg    354w,
-                  ./img/adaptive-img/mobile/main/nikolay-t-450.jpg    450w,
-                  ./img/adaptive-img/desck/main/nikolay-t_540@2x.jpg  540w,
-                  ./img/adaptive-img/tablet/main/nikolay-t_708@2x.jpg 708w,
-                  ./img/adaptain-img/mobile/main/nikolay-t_900@2x.jpg 900w
-                "
-                src="./img/adaptive-img/desck/main/nikolay-t_270.jpg"
-                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
-                alt="Николай Тарасов"
-              />
-              <!--   <img
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/adaptive-img/desck/main/nikolay-t_270.jpg    1x,
+                    ./img/adaptive-img/desck/main/nikolay-t_540@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/adaptive-img/tablet/main/nikolay-t-354.jpg    1x,
+                    ./img/adaptive-img/tablet/main/nikolay-t_708@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  srcset="
+                    ./img/adaptive-img/mobile/main/nikolay-t-450.jpg    1x,
+                    ./img/adaptive-img/mobile/main/nikolay-t_900@2x.jpg 2x
+                  "
+                  src="./img/adaptive-img/mobile/main/nikolay-t-450.jpg"
+                  alt="Николай Тарасов"
+                  loading="lazy"
+                />
+              </picture>
+
+              <!--  <img
                 src="./img/main/nikolay-t.jpg"
                 alt="Николай Тарасов"
                 width="270"
@@ -498,20 +553,35 @@
               </div>
             </li>
             <li class="team__card">
-              <img
-                srcset="
-                  ./img/adaptive-img/desck/main/mihail-e_270.jpg     270w,
-                  ./img/adaptive-img/tablet/main/mihail-e-354.jpg    354w,
-                  ./img/adaptive-img/mobile/main/mihail-e-450.jpg    450w,
-                  ./img/adaptive-img/desck/main/mihail-e_540@2x.jpg  540w,
-                  ./img/adaptive-img/tablet/main/mihail-e_708@2x.jpg 708w,
-                  ./img/adaptive-img/mobile/main/mihail-e_900@2x.jpg 900w
-                "
-                src="./img/adaptive-img/desck/main/mihail-e_270.jpg"
-                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
-                alt="Михаил Ермаков"
-              />
-              <!--    <img
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./img/adaptive-img/desck/main/mihail-e_270.jpg    1x,
+                    ./img/adaptive-img/desck/main/mihail-e_540@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./img/adaptive-img/tablet/main/mihail-e-354.jpg    1x,
+                    ./img/adaptive-img/tablet/main/mihail-e_708@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  srcset="
+                    ./img/adaptive-img/mobile/main/mihail-e-450.jpg    1x,
+                    ./img/adaptive-img/mobile/main/mihail-e_900@2x.jpg 2x
+                  "
+                  src="./img/adaptive-img/mobile/main/mihail-e-450.jpg"
+                  alt="Михаил Ермаков"
+                  loading="lazy"
+                />
+              </picture>
+
+              <!--  <img
                 src="./img/main/mikhail-e.jpg"
                 alt="Михаил Ермаков"
                 width="270"

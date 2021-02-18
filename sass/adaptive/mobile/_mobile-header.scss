@@ -26,8 +26,9 @@
     display: flex;
   }
 
-  .header .container {
+  .header {
     border: 1px solid $header-color;
+    width: 100%;
   }
 
   .header__logo {
