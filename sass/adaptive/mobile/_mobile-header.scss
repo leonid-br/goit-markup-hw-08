@@ -1,8 +1,12 @@
 @media screen and (max-width: 767px) {
+  .header {
+    border: 1px solid $header-color;
+    /* width: 100%; */
+  }
   .container {
     display: block;
     width: 480px;
-    padding-right: 15px;
+    /* padding-right: 15px; */
   }
 
   .header__mobile-menu {
@@ -24,11 +28,6 @@
 
   .header__menu {
     display: flex;
-  }
-
-  .header {
-    border: 1px solid $header-color;
-    width: 100%;
   }
 
   .header__logo {

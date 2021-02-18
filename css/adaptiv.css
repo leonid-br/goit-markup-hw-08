@@ -1388,10 +1388,14 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    border: 1px solid #ececec;
+    /* width: 100%; */
+  }
   .container {
     display: block;
     width: 480px;
-    padding-right: 15px;
+    /* padding-right: 15px; */
   }
   .header__mobile-menu {
     display: none;
@@ -1409,10 +1413,6 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .header {
-    border: 1px solid #ececec;
-    width: 100%;
   }
   .header__logo {
     font-size: 24px;
@@ -2179,7 +2179,7 @@ button {
     padding: 0;
   }
   .portfolio {
-    padding: 60px 0;
+    padding: 60px 15px;
   }
   .portfolio-nav__list {
     display: -webkit-box;
