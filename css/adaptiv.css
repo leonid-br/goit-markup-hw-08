@@ -500,8 +500,8 @@ button {
   .main-title {
     padding: 200px 0 280px;
     background-color: #2f303a;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../img/adaptive-img/desck/main/bg-main_1600.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../img/adaptive-img/desck/main/bg-main_1600.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/adaptive-img/desck/main/bg-main_1600.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/adaptive-img/desck/main/bg-main_1600.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -509,8 +509,8 @@ button {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main-title {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../img/adaptive-img/desck/main/bg-main_3200@2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../img/adaptive-img/desck/main/bg-main_3200@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/adaptive-img/desck/main/bg-main_3200@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/adaptive-img/desck/main/bg-main_3200@2x.jpg");
   }
   /* .box{
   width: 480px;
@@ -1387,7 +1387,8 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px)  */
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     border: 1px solid #ececec;
     /* width: 100%; */
@@ -2399,6 +2400,10 @@ button {
     color: #2196f3;
     fill: #2196f3;
   }
+  .header__address-link.phone svg:hover,
+  .header__address-link.mail svg:hover {
+    fill: #2196f3;
+  }
   .header__nav-color,
   .current-page-color {
     padding: 32px 0;
@@ -2434,8 +2439,8 @@ button {
   .main-title {
     padding: 118px 0 198px;
     background-color: #2f303a;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../img/adaptive-img/tablet/main/bg-main_768.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../img/adaptive-img/tablet/main/bg-main_768.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/adaptive-img/tablet/main/bg-main_768.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/adaptive-img/tablet/main/bg-main_768.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -2443,8 +2448,8 @@ button {
 
 @media screen and (min-width: 768px) and (max-width: 1190px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1190px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1190px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1190px) and (min-resolution: 2dppx) {
   .main-title {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../img/adaptive-img/tablet/main/bg-main_1536@2x.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../img/adaptive-img/tablet/main/bg-main_1536@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/adaptive-img/tablet/main/bg-main_1536@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/adaptive-img/tablet/main/bg-main_1536@2x.jpg");
   }
 }
 

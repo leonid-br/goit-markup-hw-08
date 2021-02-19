@@ -93,6 +93,10 @@
       color: $color-hover;
       fill: $color-hover;
     }
+    &.phone svg:hover,
+    &.mail svg:hover {
+      fill: $color-hover;
+    }
   }
 
   .header__nav-color,

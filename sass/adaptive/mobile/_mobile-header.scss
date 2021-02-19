@@ -1,4 +1,5 @@
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px)  */
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     border: 1px solid $header-color;
     /* width: 100%; */
