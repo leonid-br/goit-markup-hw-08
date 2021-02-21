@@ -10,9 +10,10 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../img/adaptive-img/tablet/main/bg-main_768.jpg');
+      url('../img/adaptive-img/desck/main/bg-main_1600.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -25,7 +26,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url('../img/adaptive-img/tablet/main/bg-main_1536@2x.jpg');
+        url('../img/adaptive-img/desck/main/bg-main_3200@2x.jpg');
     }
   }
   .main-title__first-title {

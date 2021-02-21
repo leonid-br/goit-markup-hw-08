@@ -27,6 +27,7 @@
       pointer-events: initial;
       position: absolute;
       height: 100vh;
+      width: 100vw;
 
       opacity: 1;
     }
@@ -34,12 +35,10 @@
 
   .header__mobile-menu-btn-close {
     position: absolute;
-    top: 18px;
-    right: -178px;
-
+    margin-top: 20px;
+    right: 15px;
     background: none;
     border: none;
-    width: 100%;
     outline: none;
 
     &:hover,
@@ -53,6 +52,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -45px;
   }
 
   .header__nav {
@@ -113,7 +113,7 @@
     position: relative;
     display: flex;
     padding-left: 40px;
-    /*    width: 480px; */
+    flex-wrap: wrap;
 
     & a {
       color: $color-hover;

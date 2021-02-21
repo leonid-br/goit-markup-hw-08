@@ -10,6 +10,7 @@
       url('../img/adaptive-img/desck/main/bg-main_1600.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -24,21 +25,6 @@
         ),
         url('../img/adaptive-img/desck/main/bg-main_3200@2x.jpg');
     }
-    /* .box{
-  width: 480px;
-  height: 320px;
-  background-image: url('photo.png');
-  background-size: 480px 320px;
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .box {
-    background-image: url('photo@2x.png');
-  } */
   }
 
   .main-title__first-title {
