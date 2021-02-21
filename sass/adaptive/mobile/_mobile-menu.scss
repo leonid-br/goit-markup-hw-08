@@ -26,7 +26,7 @@
       visibility: visible;
       pointer-events: initial;
       position: absolute;
-      height: 100vh;
+      height: 100%;
       width: 100vw;
 
       opacity: 1;
@@ -53,12 +53,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: -45px;
+
+    /* @media screen and (max-width: 479px) {
+      margin-top: -45px;
+    } */
   }
 
   .header__nav {
-    /*     display: flex;
- */ /*     justify-content: space-between;
- */
     margin-left: 40px;
   }
 
@@ -87,7 +88,7 @@
   .header__address {
     display: flex;
     flex-direction: column-reverse;
-    padding-left: 40px;
+    margin-left: 40px;
   }
 
   .header__address-link.phone {
@@ -112,7 +113,7 @@
   .header__socials {
     position: relative;
     display: flex;
-    padding-left: 40px;
+    margin-left: 40px;
     flex-wrap: wrap;
 
     & a {

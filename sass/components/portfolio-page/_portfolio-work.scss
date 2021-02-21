@@ -1,8 +1,8 @@
 @media screen and (min-width: 1200px) {
   .portfolio-work__list {
     display: flex;
-
     flex-wrap: wrap;
+    margin: -15px;
   }
 
   .portfolio-work__item {
@@ -12,10 +12,9 @@
     height: 100%;
     background: $color-light;
     border: 1px solid $portfolio-card-color;
-
-    &:not(:nth-last-child(-n + 3)) {
-      margin-bottom: 30px;
-    }
+    /*   &:nth-child(-n + 3) {
+      margin-bottom: 0;
+    } */
   }
 
   .portfolio-work__image {
