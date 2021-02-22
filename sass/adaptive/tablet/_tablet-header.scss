@@ -25,10 +25,12 @@
     align-items: center;
   }
 
+  .header__menu {
+    margin-left: 88px;
+  }
+
   .header__nav {
     display: flex;
-
-    margin-left: 88px;
 
     transition-property: color, fill;
     transition-duration: 250ms;
