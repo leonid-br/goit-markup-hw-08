@@ -1,4 +1,4 @@
-/* (() => {
+(() => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
 
@@ -10,10 +10,10 @@
     menuBtnRef.setAttribute("aria-expanded", !expanded);
 
     mobileMenuRef.classList.toggle("is-open");
-  });
-})(); */
+  }); 
+})();
 
-(() => {
+/* (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-menu-open]"),
     closeModalBtn: document.querySelector("[data-menu-close]"),
@@ -24,7 +24,7 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-   /*  document.body.classList.toggle("is-open"); */
+    document.body.classList.toggle("is-open");
     refs.modal.classList.toggle("is-open");
   }
-})();
+})(); */

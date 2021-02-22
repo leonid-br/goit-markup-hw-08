@@ -912,6 +912,8 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0 auto;
+    max-width: 1600px;
   }
 }
 
